@@ -30,4 +30,9 @@ public class BallControl : MonoBehaviour
         transform.position = Vector3.zero;
         myRb.velocity = new Vector2(1, Random.Range(yMin, yMax)) * ballSpeed;
     }
+
+    public void ActivatePUSpeedUp(float magnitude)
+    {
+        myRb.velocity *= magnitude;
+    }
 }
